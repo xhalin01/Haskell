@@ -1,0 +1,18 @@
+Funkcionalny projekt RKA-2-DKA
+Autor: Michael Halinár
+login: xhalin01
+
+Tento program prevádza rozšírený konečný automat na deterministický automat.
+
+Príklad spustenia: 
+
+rka-2-dka [volby] [vstup]
+vstup: názov vstupného súboru
+volby: -i načítanie a vypísanie automatu
+       -t načítanie a vypísanie minimálneho deterministického automatu
+
+Implementácia: program si načíta zadaný automat do štruktúry "FiniteStateMachine". Potom nasleduje determinizácia automatu. Prebieha algoritmom popísaným v opore predmetu TIN. Stavy sú pomenované podľa indexu ktorý určuje pozíciu zoradených zoznamov stavov, pričom štartovací stav je priradený ako prvý stav.
+
+Vlastné testy: priečinok tests obsahuje testy, do tohoto priečinka je nutné vložiť binárku rka-2-dka a následne spustiť testy skriptom run-tests.sh
+
+Poznámka: niektoré časti kódu, hlavne dátové štruktúry, boli prebraté z mojeho vlastného projektu z minulého roku, z iného zadania(DKA-2-MKA).
